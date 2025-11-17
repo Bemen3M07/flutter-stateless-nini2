@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  flutter_svg: ^2.0.9
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -17,3 +19,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+assets:
+  - assets/dice_1.svg
+  - assets/dice_2.svg
+  - assets/dice_3.svg
+  - assets/dice_4.svg
+  - assets/dice_5.svg
+  - assets/dice_6.svg
