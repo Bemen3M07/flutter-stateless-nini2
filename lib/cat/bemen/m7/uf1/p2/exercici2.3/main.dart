@@ -15,18 +15,18 @@ class MainApp extends StatefulWidget {
 class _MainAppState extends State<MainApp> {
   TextEditingController controller = TextEditingController();
   int numeroSecreto = Random().nextInt(101); // 0 a 100
-  String mensaje = 'Adivina el número entre 0 y 100';
+  String mensaje = 'Endivina el número entre 0 y 100';
 
   void comprobarNumero() {
     int numeroUsuario = int.parse(controller.text);
     
     setState(() {
       if (numeroUsuario < numeroSecreto) {
-        mensaje = 'El número que buscas es más grande';
+        mensaje = 'El número és més gran';
       } else if (numeroUsuario > numeroSecreto) {
-        mensaje = 'El número que buscas es más pequeño';
+        mensaje = 'El número és més petit';
       } else {
-        mensaje = 'Has acertado!';
+        mensaje = 'Has encertat!';
       }
     });
   }
