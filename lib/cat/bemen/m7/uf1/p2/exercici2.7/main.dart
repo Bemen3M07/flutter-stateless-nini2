@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 void main() {
   runApp(
     ChangeNotifierProvider(
-      create: (_) => CounterProvider(), // Se crea una única instancia del Provider
+      create: (context) => CounterProvider(),
       child: const MainApp(),
     ),
   );
@@ -42,9 +42,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false, // Oculta el banner de debug
-      home: const HomePage(), // Página principal
+      home: HomePage(), // Página principal
     );
   }
 }
